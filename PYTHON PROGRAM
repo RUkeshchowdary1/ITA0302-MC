@@ -1,0 +1,32 @@
+class MobileDevice:
+    def __init__(self, name, os, camera_mp):
+        self.name = name
+        self.os = os
+        self.camera_mp = camera_mp
+
+    def display_specs(self):
+        print(f"Name: {self.name}")
+        print(f"OS: {self.os}")
+        print(f"Camera (MP): {self.camera_mp}")
+
+class MobileApp:
+    def __init__(self, name, category, rating):
+        self.name = name
+        self.category = category
+        self.rating = rating
+
+    def display_info(self):
+        print(f"Name: {self.name}")
+        print(f"Category: {self.category}")
+        print(f"Rating: {self.rating}")
+
+Create instances
+device = MobileDevice("iPhone 14", "iOS", 12)
+app = MobileApp("Instagram", "Social Media", 4.5)
+
+Display information
+print("Mobile Device Specs:")
+device.display_specs()
+
+print("\nMobile App Info:")
+app.display_info()
